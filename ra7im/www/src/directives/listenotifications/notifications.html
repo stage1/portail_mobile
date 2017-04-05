@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="../../../scripts/angular.min.js"></script>
+    <script src="../../../scripts/jquery.min.js"></script>
+    <script src="notifications.js"></script>
+</head>
+<body  ng-app="MyApp" ng-controller="MyController">
+    <div class="panel panel-default">
+        <div class="panel-heading"><a> Liste Notifications  </a></div>
+        <div class="panel-body">
+            <div class="list-group">
+                <a ng-repeat="notification in notifications" ng-href="" class="list-group-item">
+                    <div>{{notification.reference}}</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="javascript:history.go(-1)">Page précedente</a>
+    </div>
+
+</body>
+</html>
