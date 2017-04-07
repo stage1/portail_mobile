@@ -1,3 +1,1 @@
-﻿angular.module('ra7im', [
-  'ui.router'
-]);
+﻿angular.module('branchementApp', ['ui.router']); //

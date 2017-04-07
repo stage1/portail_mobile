@@ -1,18 +1,14 @@
-﻿   
-   <!-- Branchements Section -->
-    <section class="success" id="branchements">
-        <div>
-            <div class="panel panel-default">
-                <div class="panel-heading"><a>liste des branchements </a></div>
-                <div class="panel-body">
-                    <div class="list-group">
-                        <a ng-repeat="branchement in branchements" href="../détails branchement/détailsbranchement.html" class="list-group-item">
-                            <div>{{branchement.identifiant}}</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+﻿
 
-   
+
+    <div class="form">
+        <header>Accueil</header>
+        <br />
+        <button ng-click="facturesImpayees()"      class="btn btn-link">Factures_impayees</button>
+        <button ng-click="notificationsNonLues()"  class="btn btn-link">Notifications non lues</button>
+        <button ng-click="reclamationsEncours()"   class="btn btn-link">Réclamations en cours </button>
+        <button ng-click="reclamationsRejetees()"  class="btn btn-link">Réclamations rejetees</button>
+
+    </div>
+    
+

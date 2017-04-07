@@ -11,6 +11,22 @@
           url: '/authentif',
           template: '<authentif></authentif>'
       })
+      .state('listFactImpayees', {
+          url: '/listFactImpayees',
+          template: '<listFactImpayees></listFactImpayees>'
+      })
+      .state('listenotifications', {
+          url: '/listenotifications',
+          template: '<listenotifications></listenotifications>'
+      })
+      .state('listReclEncours', {
+          url: '/listReclEncours',
+          template: '<listReclEncours></listReclEncours>'
+      })
+      .state('listReclRejetees', {
+          url: '/listReclRejetees',
+          template: '<listReclRejetees></listReclRejetees>'
+      })
       
       ;
       $urlRouterProvider.otherwise("/authentif");

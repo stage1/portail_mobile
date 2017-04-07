@@ -5,7 +5,6 @@
         controllerAs: 'authentifctrl',
         controller: function ($scope, $state) {
             $scope.login = function () {
-                 //if ..;....
                 $state.go('accueil');
             }
         }

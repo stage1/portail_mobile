@@ -1,4 +1,4 @@
-﻿angular.module('ra7im')
+﻿angular.module('branchementApp')
   .config(function ($stateProvider, $urlRouterProvider) {
 
       $stateProvider
@@ -7,18 +7,27 @@
             template: '<accueil></accueil>'
         })
     
-      .state('detailsBranchement', {
-          url: '/detailsBranchement',
-          template: '<detailsBranchement></detailsBranchement>'
+      .state('authentif', {
+          url: '/authentif',
+          template: '<authentif></authentif>'
       })
-      .state('Authentification', {
-          url: '/Authentification',
-          template: '<Authentification></Authentification>'
+      .state('listFactImpayees', {
+          url: '/listFactImpayees',
+          template: '<listFactImpayees></listFactImpayees>'
       })
-      .state('login', {
-          url: '/login',
-          template: '<login></login>'
+      .state('listenotifications', {
+          url: '/listenotifications',
+          template: '<listenotifications></listenotifications>'
       })
+      .state('listReclEncours', {
+          url: '/listReclEncours',
+          template: '<listReclEncours></listReclEncours>'
+      })
+      .state('listReclRejetees', {
+          url: '/listReclRejetees',
+          template: '<listReclRejetees></listReclRejetees>'
+      })
+      
       ;
-      $urlRouterProvider.otherwise("/login");
+      $urlRouterProvider.otherwise("/authentif");
   });

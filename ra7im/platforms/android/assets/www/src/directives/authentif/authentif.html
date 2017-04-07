@@ -1,85 +1,12 @@
-﻿<!DOCTYPE HTML>
-<!--
-    Eventually by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-    -->
-<html>
-<head>
-    <title>SonyCRM</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link href='custom.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/css/main.css" />
-
-</head>
-<body>
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-lg-8 col-lg-offset-2">
-
-                <h1>SonyCRM </h1>
-
-                <p class="lead">Solution de gestion clientèle adaptée aux besoins métiers</p>
-
-
-                <form id="contact-form" method="post" action="contact.php" role="form">
-
-                    <div class="messages"></div>
-
-
-
-                        <div class="row">
-                            <div class="form-group">
-                                <div class="cols-sm-10">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                                        <input type="text" class="form-control" name="email" id="email" placeholder="Adresse Email" />
-                                    </div>
-                                </div>
-                            </div>
-                           
-                        </div>
-                        <div class="row">
-                            <div class="form-group">
-                                <div class="cols-sm-10">
-                                    <div class="input-group">
-                                        <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                                        <input type="text" class="form-control" name="username" id="username" placeholder="Mot de passe" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <div class="form-group ">
-                        <a href="../accueil/accueil.html" type="button" id="button" class="btn btn-success btn-lg btn-block login-button">Connecter</a>
-                    </div>
-                    <br /><br />
-                    <div class="col-md-12">
-                        <input onclick="window.location.href = '../Inscription/inscrire.html'" class="btn btn-link btn-link" value="Créer un Compte" size="32">
-                    </div>
-                    <div class="col-md-12">
-                            <input class="btn btn-link btn-link" value="Informations de compte oubliées?" size="32">
-                     </div>
-                    
-
-                </form>
-
-            </div><!-- /.8 -->
-
-        </div> <!-- /.row-->
-
-    </div> <!-- /.container-->
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script src="validator.js"></script>
-    <script src="contact.js"></script>
-    <script src="assets/js/main.js"></script>
-
-</body>
-</html>
+﻿<div class="body_login">
+    <div class="form">
+        <header>Login</header>
+        <label>Username <span>*</span></label>
+        <input />
+        <div class="help">At least 6 character</div>
+        <label>Password <span>*</span></label>
+        <input />
+        <div class="help">Use upper and lowercase lettes as well</div>
+        <button ng-click="login()">Login</button>
+    </div>
+</div>
