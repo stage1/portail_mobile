@@ -13,21 +13,18 @@
          <br />
         <center>les branchements</center>
         <div class="table-wrap">
-            <table class='table table-striped table-bordered table-hover' id='clientTable'>
+            <table class='table table-striped table-bordered table-hover'>
                 <thead class="thead-inverse">
                     <tr>
                         <th class="text-xs-center"> reference </th>
                         <th> adresse </th>
-                        <th class="text-xs-center"></th>
                     </tr>
                 </thead>
                 <tbody ng-repeat='branchement in branchements'>
                     <tr>
-                        <td class="text-xs-center">{{ branchement.reference }}</td>
+                        <td class="btn btn-link" ng-click="details()" >{{ branchement.reference }}</td>
                         <td>{{ branchement.adresse }}</td>
-                        <td class="text-xs-center">
-                            <a class='btn btn-primary'  ng-click="details()">Details</a>
-                        </td>
+                        
 </table>
 
   </div>
