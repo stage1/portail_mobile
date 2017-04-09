@@ -27,6 +27,10 @@
           url: '/listReclRejetees',
           template: '<listReclRejetees></listReclRejetees>'
       })
+      .state('detailsBranchement', {
+          url: '/detailsBranchement',
+          template: '<detailsBranchement></detailsBranchement>'
+      })
       
       ;
       $urlRouterProvider.otherwise("/authentif");

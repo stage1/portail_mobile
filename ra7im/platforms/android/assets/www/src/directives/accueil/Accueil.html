@@ -4,11 +4,35 @@
     <div class="form">
         <header>Accueil</header>
         <br />
+       <center>Les encours</center> 
         <button ng-click="facturesImpayees()"      class="btn btn-link">Factures_impayees</button>
         <button ng-click="notificationsNonLues()"  class="btn btn-link">Notifications non lues</button>
         <button ng-click="reclamationsEncours()"   class="btn btn-link">Réclamations en cours </button>
         <button ng-click="reclamationsRejetees()"  class="btn btn-link">Réclamations rejetees</button>
 
-    </div>
-    
+         <br />
+        <center>les branchements</center>
+        <div class="table-wrap">
+            <table class='table table-striped table-bordered table-hover' id='clientTable'>
+                <thead class="thead-inverse">
+                    <tr>
+                        <th class="text-xs-center"> reference </th>
+                        <th> adresse </th>
+                        <th class="text-xs-center"></th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat='branchement in branchements'>
+                    <tr>
+                        <td class="text-xs-center">{{ branchement.reference }}</td>
+                        <td>{{ branchement.adresse }}</td>
+                        <td class="text-xs-center">
+                            <a class='btn btn-primary'  ng-click="details()">Details</a>
+                        </td>
+</table>
+
+  </div>
+        </div>
+
+        
+
 

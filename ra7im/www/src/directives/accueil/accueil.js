@@ -15,17 +15,27 @@
             }
             $scope.reclamationsRejetees = function () {
                 $state.go('listReclRejetees');
-
             }
-            $scope.branchements = function () {
+            $scope.details = function () {
                 $state.go('detailsBranchement');
             }
-            $scope.branchements = function () 
-            {reference:"kh135"},
-            {reference:"bn147"},
-            {reference:"oiiu455"}
-
-
-            
-    
+            $scope.branchements = [{
+                reference: 1441,
+                adresse: 'John'
+            }, {
+                reference: 1502,
+                adresse: 'Jane'
+            }, {
+                reference: 7453,
+                adresse: 'Jude',
+            }, {
+                reference: 124,
+                adresse: 'James',
+              
+            }, {
+                reference: 4875,
+                adresse: 'Harry'
+          
+            }];
+         
             }}});
