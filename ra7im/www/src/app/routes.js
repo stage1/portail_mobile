@@ -32,6 +32,26 @@
           url: '/listreclrejetees',
           template: '<listreclrejetees></listreclrejetees>'
       })
+      .state('historeleves', {
+          url: '/historeleves',
+          template: '<historeleves></historeleves>'
+      })
+      .state('histonotification', {
+          url: '/histonotification',
+          template: '<histonotification></histonotification>'
+      })
+      .state('histofactures', {
+          url: '/histofactures',
+          template: '<histofactures></histofactures>'
+      })
+      .state('historeclamation', {
+          url: '/historeclamation',
+          template: '<historeclamation></historeclamation>'
+      })
+       .state('deposereclamation', {
+           url: '/deposereclamation',
+           template: '<deposereclamation></deposereclamation>'
+       })
       
       ;
       $urlRouterProvider.otherwise("/authentif");
