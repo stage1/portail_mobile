@@ -11,25 +11,26 @@
           url: '/authentif',
           template: '<authentif></authentif>'
       })
-      .state('listFactImpayees', {
-          url: '/listFactImpayees',
-          template: '<listFactImpayees></listFactImpayees>'
+     .state('branchement', {
+         url: '/branchement',
+         template: '<branchement></branchement>'
+          })
+
+      .state('listfactimpayees', {
+          url: '/listfactimpayees',
+          template: '<listfactimpayees></listfactimpayees>'
       })
       .state('listenotifications', {
           url: '/listenotifications',
           template: '<listenotifications></listenotifications>'
       })
-      .state('listReclEncours', {
-          url: '/listReclEncours',
-          template: '<listReclEncours></listReclEncours>'
+      .state('listreclencours', {
+          url: '/listreclencours',
+          template: '<listreclencours></listreclencours>'
       })
-      .state('listReclRejetees', {
-          url: '/listReclRejetees',
-          template: '<listReclRejetees></listReclRejetees>'
-      })
-      .state('detailsBranchement', {
-          url: '/detailsBranchement',
-          template: '<detailsBranchement></detailsBranchement>'
+      .state('listreclrejetees', {
+          url: '/listreclrejetees',
+          template: '<listreclrejetees></listreclrejetees>'
       })
       
       ;

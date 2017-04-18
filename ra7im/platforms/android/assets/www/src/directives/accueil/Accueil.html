@@ -11,26 +11,24 @@
         <button ng-click="reclamationsRejetees()"  class="btn btn-link">Réclamations rejetees</button>
 
          <br />
-        <center>les branchements</center>
+        <center>Les branchements</center>
+        <br />
         <div class="table-wrap">
             <table class='table table-striped table-bordered table-hover'>
                 <thead class="thead-inverse">
                     <tr>
                         <th class="text-xs-center"> reference </th>
-                        <th> adresse </th>
+                        <th class="text-xs-center"> adresse </th>
                     </tr>
                 </thead>
                 <tbody ng-repeat='branchement in branchements'>
                     <tr>
-                        <td class="btn btn-link" ng-click="details()" >{{ branchement.reference }}</td>
-                        <td>{{ branchement.adresse }}</td>
+                        <td class="btn btn-link" ng-click="details()" width="100%" >{{ branchement.reference }}</td>
+                        <td class="text-xs-center">{{ branchement.adresse }}</td>
                         
 </table>
 
-  </div>
-        <a href="javascript:history.go(-1)">Page précedente</a>
-
-        </div>
+  
 
         
 

@@ -5,19 +5,19 @@
         controllerAs: 'accueilctrl',
         controller: function ($scope, $state) {
             $scope.facturesImpayees = function () {
-                $state.go('listFactImpayees');
+                $state.go('listfactimpayees');
             }
             $scope.notificationsNonLues = function () {
                 $state.go('listenotifications');
             }
             $scope.reclamationsEncours = function () {
-                $state.go('listReclEncours');
+                $state.go('listreclencours');
             }
             $scope.reclamationsRejetees = function () {
-                $state.go('listReclRejetees');
+                $state.go('listreclrejetees');
             }
             $scope.details = function () {
-                $state.go('detailsBranchement');
+                $state.go('branchement');
             }
             $scope.branchements = [{
                 reference: 1441,
