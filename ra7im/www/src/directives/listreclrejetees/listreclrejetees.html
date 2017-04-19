@@ -1,0 +1,34 @@
+﻿
+
+<div class="page-header">
+    <h1> réclamations rejetées   </h1>
+</div>
+
+<hr />
+
+<div class='row'>
+    <div class='col-sm-8'>
+        <form class='form-group form-inline'>
+            <input class='form-control' ng-model='search' id='search-input' placeholder='Search...' autocomplete='off' type='text'>
+        </form>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th class="text-xs-center"> Référence </th>
+                    <th>Motif de rejet</th>
+                    <th class="text-xs-center">Date de rejet</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat='reclamation in reclamations | filter:search'>
+                <tr>
+                    <td class="text-xs-center">{{reclamation.reference}}</td>
+                    <td class="text-xs-center">{{reclamation.motifRejet}}</td>
+                    <td class="text-xs-center">{{reclamation.dateRejet}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+
