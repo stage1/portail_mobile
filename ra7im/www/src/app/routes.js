@@ -52,6 +52,10 @@
            url: '/deposereclamation',
            template: '<deposereclamation></deposereclamation>'
        })
+       .state('inscription', {
+           url: '/inscription',
+           template: '<inscription></inscription>'
+       })
       
       ;
       $urlRouterProvider.otherwise("/authentif");
