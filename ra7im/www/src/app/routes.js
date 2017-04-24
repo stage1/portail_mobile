@@ -56,7 +56,11 @@
            url: '/inscription',
            template: '<inscription></inscription>'
        })
+       .state('pagelogin', {
+           url: '/pagelogin',
+           template: '<pagelogin></pagelogin>'
+       })
       
       ;
-      $urlRouterProvider.otherwise("/authentif");
+      $urlRouterProvider.otherwise("/pagelogin");
   });
