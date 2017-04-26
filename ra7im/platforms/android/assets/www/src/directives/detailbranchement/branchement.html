@@ -1,4 +1,4 @@
-﻿  <div class="form">
+﻿<div class="form">
     <div>
         <br /><br />
         <label for="example-text-input" class="col-2 col-form-label">Identifiant incrémental</label>
@@ -46,10 +46,59 @@
 
 
         <br />
+    </div>
 
-        <button ng-click="historiqueReleve()" class="btn btn-link">historique relève</button>
-        <button ng-click="historiqueFactures()" class="btn btn-link">historique factures</button>
-        <button ng-click="historiqueReclamations()" class="btn btn-link">historique réclamations </button>
-        <button ng-click="historiqueNotifications()" class="btn btn-link">historique notifications</button>
+
+    <div class="col-md-3">
+        <a href="" data-toggle="modal" data-target="#modalHistoFact" data-whatever="@mdo">
+            <div class="sm-st clearfix sm-st2">
+                <span class="sm-st-icon st-blue"><i class=""></i></span>
+                <div class="sm-st-info">
+                    Historique Fatures
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-3">
+        <a href="" data-toggle="modal" data-target="#modalHistoNotifications" data-whatever="@mdo">
+            <div class="sm-st clearfix sm-st2">
+                <span class="sm-st-icon st-blue"><i class=""></i></span>
+                <div class="sm-st-info">
+                    Historique Notifications
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-3">
+        <a href="" data-toggle="modal" data-target="#modalHistoReclamations" data-whatever="@mdo">
+            <div class="sm-st clearfix sm-st2">
+                <span class="sm-st-icon st-blue"><i class=""></i></span>
+                <div class="sm-st-info">
+                    Historique réclamations
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-3">
+        <a href="" data-toggle="modal" data-target="#modalHistoReleves" data-whatever="@mdo">
+            <div class="sm-st clearfix sm-st2">
+                <span class="sm-st-icon st-blue"><i class=""></i></span>
+                <div class="sm-st-info">
+                    Historique réleves
+                </div>
+            </div>
+        </a>
     </div>
 </div>
+    <histofactures></histofactures>
+    <histonotification></histonotification>
+    <historeclamation></historeclamation>
+    <historeleves></historeleves>
+
+
+
+
+

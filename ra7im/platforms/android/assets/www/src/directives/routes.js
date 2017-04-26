@@ -11,9 +11,9 @@
           url: '/authentif',
           template: '<authentif></authentif>'
       })
-     .state('detailbranchement', {
-         url: '/detailbranchement',
-         template: '<detailbranchement></detailbranchement>'
+     .state('branchement', {
+         url: '/branchement',
+         template: '<branchement></branchement>'
           })
 
        .state('deposereclamation', {

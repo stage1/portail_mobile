@@ -1,37 +1,41 @@
 ﻿
-<div class="page-header">
-    <h1> Factures impayées </h1>
+<div id="modalImpayees" class="modal fade" tabindex="-1" role="dialog"
+	aria-labelledby="gridSystemModalLabel">
+<div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="gridSystemModalLabel">Fatures impayées</h4>
+        </div>
+        <div class="modal-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="text-xs-center"> Référence</th>
+                        <th>Date d'exigibilité</th>
+                        <th class="text-xs-center"> Montant HT</th>
+                        <th class="text-xs-center">Montant TTC</th>
+                        <th class="text-xs-center">Reste à payé </th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat='facture in factures | filter:search'>
+                    <tr>
+                        <td class="btn btn-link" ng-click="reference()">{{facture.reference}}</td>
+                        <td class="text-xs-center">{{facture.dateExigibilite}}</td>
+                        <td class="text-xs-center">{{facture.montantHt}}</td>
+                        <td class="text-xs-center">{{facture.montantTtc}}</td>
+                        <td class="text-xs-center">{{facture.restePaye}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer"></div>
+    </div>
+    <!-- /.modal-content -->
 </div>
-
-<hr />
-
-<div class='row'>
-    <div class='col-sm-8'>
-        <form class='form-group form-inline'>
-            <input class='form-control' ng-model='search' id='search-input' placeholder='Search...' autocomplete='off' type='text'>
-        </form>
-
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th class="text-xs-center"> Référence</th>
-                    <th>Date d'exigibilité</th>
-                    <th class="text-xs-center"> Montant HT</th>
-                    <th class="text-xs-center">Montant TTC</th>
-                    <th class="text-xs-center">Reste à payé </th>
-                </tr>
-            </thead>
-            <tbody ng-repeat='facture in factures | filter:search'>
-                <tr>
-                    <td class="btn btn-link" ng-click="reference()">{{facture.reference}}</td>
-                    <td class="text-xs-center">{{facture.dateExigibilite}}</td>
-                    <td class="text-xs-center">{{facture.montantHt}}</td>
-                    <td class="text-xs-center">{{facture.montantTtc}}</td>
-                    <td class="text-xs-center">{{facture.restePaye}}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    </div>
-
-
+<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

@@ -1,31 +1,78 @@
 ﻿
 
+<div class="form">
 
-    <div class="form">
-    <header>Accueil</header>
     <br />
     <center>Les encours</center>
-    <button ng-click="facturesImpayees()" class="btn btn-link">Factures impayees</button>
-    <button ng-click="notificationsNonLues()" class="btn btn-link">Notifications non lues</button>
-    <button ng-click="reclamationsEncours()" class="btn btn-link">Réclamations en cours </button>
-    <button ng-click="reclamationsRejetees()" class="btn btn-link">Réclamations rejetees</button>
+
+    <div class="col-md-3">
+        <a href="" data-toggle="modal" data-target="#modalImpayees" data-whatever="@mdo">
+            <div class="sm-st clearfix sm-st2">
+                <span class="sm-st-icon st-blue"><i class="fa fa-dollar"></i></span>
+                <div class="sm-st-info">
+                    <span>{{nbreImpayees}}</span>
+                    Fatures impayées
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a href="" data-toggle="modal" data-target="#modalNotification" data-whatever="@mdo">
+            <div class="sm-st clearfix sm-st2">
+                <span class="sm-st-icon st-blue"><i class="fa fa-bell"></i></span>
+                <div class="sm-st-info">
+                    <span>{{nbreNotidNonlues}}</span>
+                    Notifications non lues
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a href="" data-toggle="modal" data-target="#modalReclamationEncours" data-whatever="@mdo">
+            <div class="sm-st clearfix sm-st2">
+                <span class="sm-st-icon st-blue"><i class="fa fa-check"></i></span>
+                <div class="sm-st-info">
+                    <span>{{nbreReclmtionEncours}}</span>
+                    Réclamations Encours
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a href="" data-toggle="modal" data-target="#modalReclamationRejetees" data-whatever="@mdo">
+            <div class="sm-st clearfix sm-st2">
+                <span class="sm-st-icon st-blue"><i class="fa fa-times"></i></span>
+                <div class="sm-st-info">
+                    <span>{{nbreReclmtionRejetes}}</span>
+                    Réclamations Rejetées
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <listfactimpayees></listfactimpayees>
+    <listenotifications></listenotifications>
+    <listreclencours></listreclencours>
+    <listreclrejetees></listreclrejetees>
+
 
     <br />
     <center>Les branchements</center>
     <br />
     <table class="table table-striped">
         <thead>
-                        <tr>
-                            <th class="text-xs-center"> reference </th>
-                            <th class="text-xs-center"> adresse </th>
-                        </tr>
-                    </thead>
-                    <tbody ng-repeat='branchement in branchements'>
-                        <tr>
-                            <td class="btn btn-link" ng-click="details()" >{{ branchement.reference }}</td>
-                            <td class="text-xs-center">{{ branchement.adresse }}</td>
+            <tr>
+                <th class="text-xs-center"> reference </th>
+                <th class="text-xs-center"> adresse </th>
+            </tr>
+        </thead>
+        <tbody ng-repeat='branchement in branchements'>
+            <tr>
+                <td class="btn btn-link" ng-click="details()">{{ branchement.reference }}</td>
+                <td class="text-xs-center">{{ branchement.adresse }}</td>
 
-                </table>
+    </table>
+    </div>
 
 
 
