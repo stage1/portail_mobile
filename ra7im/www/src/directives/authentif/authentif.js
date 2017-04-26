@@ -7,6 +7,9 @@
             $scope.login = function () {
                 $state.go('accueil');
             }
+            $scope.abonne = function () {
+                $state.go('inscription');
+            }
         }
     }
 });

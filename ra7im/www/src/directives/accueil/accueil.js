@@ -5,7 +5,7 @@
         controllerAs: 'accueilctrl',
         controller: function ($scope, $state, branchementFctr) {
             $scope.details = function () {
-                $state.go('detailbranchement');
+                $state.go('branchement');
             }
             $scope.branchements = branchementFctr.ListBranchementSelonClient();
          

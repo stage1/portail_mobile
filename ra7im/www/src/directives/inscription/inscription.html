@@ -1,91 +1,59 @@
 ﻿
-<p class="lead">Créer Votre Compte</p>
 
+<form class="form-horizontal">
+    <fieldset>
 
-<form id="contact-form" method="post" action="contact.php" role="form">
+        <legend>S'abonner</legend>
+        <!-- reference input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="name"></label>
+            <div class="col-md-4">
+                <input id="ref" name="ref" type="number" placeholder="Entrer votre référence " class="form-control input-md" required="">
 
-    <div class="messages"></div>
-
-    <div class="controls">
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input type="text" name="name" id="name" placeholder="Nom *" required="required" data-error="Firstname is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Prénom*" required="required" data-error="Lastname is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input type="email" name="email" id="email" placeholder="Addresse Email* " required="required" data-error="Addresse Email is required." />
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input id="form_phone" type="tel" name="phone" value="Tel*" class="form-control" placeholder="Numéro de mobile* " required="required" data-error="Numéro de mobile is required." />
-                    <div class="help-block with-errors"></div>
-                </div>
+        <!-- email input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="email"></label>
+            <div class="col-md-4">
+                <input id="email" name="email" type="email" placeholder="Entrer votre adresse email" class="form-control input-md" required="">
+
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input type="password" name="password" id="password" placeholder="Mot de passe*" />
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input type="password" name="onfirm password" id="password" placeholder="Veuillez confirmer votre mot de passe*" />
-                    <div class="help-block with-errors"></div>
-                </div>
+        <!-- cin input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="street"></label>
+            <div class="col-md-4">
+                <input id="cin" name="cin" type="number" placeholder="Entrer votre CIN" class="form-control input-md" required="">
+
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input id="form_adress" type="text" name="Adress" class="form-control" placeholder="Adresse*" required="required" data-error="Adresse is required." />
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input id="form_cin" type="tel" name="cin" value="CIN*" class="form-control" placeholder="CIN ou Matricule fiscale *" required="required" data-error="CIN is required." />
-                    <div class="help-block with-errors"></div>
-                </div>
+        <!-- telephone input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="area"></label>
+            <div class="col-md-4">
+
+                <input id="tel" name="tel" type="tel" placeholder="Entrer votre numéro de téléphone" class="form-control input-md" required="">
+
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input id="form_identifiant" type="password" name="Identifiant incrémental" class="form-control" placeholder="Identifiant incrémental*" required="required" data-error="Identifiant incrémentalis required." />
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input id="form_référence" type="password" name="référence" class="form-control" placeholder="Référence *" required="required" data-error="Référence is required." />
-                    <div class="help-block with-errors"></div>
-                </div>
+
+        <!-- Password input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="password"></label>
+            <div class="col-md-4">
+                <input id="password" name="password" type="password" placeholder="Entrer votre mot de passe" class="form-control input-md" required="">
+
             </div>
         </div>
 
 
-
-        <button ng-click="inscrire()" class="btn btn-submit">S'inscrire</button>
-      
-
-
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="signup"></label>
+            <div class="col-md-4">
+                <center><button id="signup" name="signup" class="btn btn-success" ng-click="abonne()">Sign Up</button></center>
+            </div>
+        </div>
+    </fieldset>
 </form>
-
-       

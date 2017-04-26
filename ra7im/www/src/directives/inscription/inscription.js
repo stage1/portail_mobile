@@ -4,7 +4,7 @@
         templateUrl: 'src/directives/inscription/inscription.html',
         controllerAs: 'inscriptionctrl',
         controller: function ($scope, $state) {
-            $scope.inscrire = function () {
+            $scope.abonne = function () {
                 $state.go('accueil');
             }
         }

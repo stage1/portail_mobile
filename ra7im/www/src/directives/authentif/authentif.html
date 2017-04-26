@@ -1,14 +1,19 @@
 ﻿
-    <div class="body_login">
-        <div class="form">
-            <header>Login</header>
-            <label>Username <span>*</span></label>
-            <input />
-            <div class="help">At least 6 character</div>
-            <label>Password <span>*</span></label>
-            <input />
-            <div class="help">Use upper and lowercase lettes as well</div>
-            <button ng-click="login()">Login</button>
-
-        </div>
+ <div class="login-form">
+    <h1>Connecter</h1>
+    <div class="form-group ">
+        <input type="email" class="form-control" placeholder="Adresse Email " id="UserName">
+        <i class="fa fa-user"></i>
     </div>
+    <div class="form-group log-status">
+        <input type="password" class="form-control" placeholder="Mot de passe" id="Passwod">
+        <i class="fa fa-lock"></i>
+    </div>
+    <span class="alert">Invalid Credentials</span>
+
+    <button type="button" class="log-btn" ng-click="login()">Connecter</button>
+    <br><br>
+    <a class="link" ng-click="abonne()">s'abonné à l'espace clientèle</a>
+
+
+</div>

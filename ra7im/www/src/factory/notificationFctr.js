@@ -35,6 +35,9 @@
             ];
             return notifications;
         },
+       
+
+
         /*List des image d'une page*/
         authentification: function (login, mdp) {
             utilisateur = { Id: '1', Nom: 'hkh' };
