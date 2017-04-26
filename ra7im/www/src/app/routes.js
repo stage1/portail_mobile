@@ -6,6 +6,10 @@
             url: '/accueil',
             template: '<accueil></accueil>'
         })
+           .state('inscription', {
+               url: '/inscription',
+               template: '<inscription></inscription>'
+           })
     
       .state('authentif', {
           url: '/authentif',
@@ -20,10 +24,7 @@
            url: '/deposereclamation',
            template: '<deposereclamation></deposereclamation>'
        })
-       .state('inscription', {
-           url: '/inscription',
-           template: '<inscription></inscription>'
-          })
+      
          
       ;
       $urlRouterProvider.otherwise("/authentif");
