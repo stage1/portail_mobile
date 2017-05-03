@@ -1,0 +1,54 @@
+﻿
+.bg-blue{
+    color: #fff;
+    border-color: #3dc4f5;
+    border-top-color: rgb(61, 196, 245);
+    border-right-color: rgb(61, 196, 245);
+    border-bottom-color: rgb(61, 196, 245);
+    border-left-color: rgb(61, 196, 245);
+    background: #5bccf6;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(91, 204, 246);
+}
+.tile-box{
+    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.tile-box {
+    line-height: inherit;
+    display: block;
+    height: auto;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    text-align: center;
+    border-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+.tile-box {
+    margin-bottom: 25px;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}

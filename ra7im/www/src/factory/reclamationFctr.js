@@ -52,29 +52,24 @@
          },
          ListHistoReclamationSelonClient: function (idCli) {
              var reclamations = [{
-                 identifiant: 'FR147',
-                 branchement: '123',
+                 reference: 'FR147',
                  type: 'N°12',
                  objet: '12/02/1994'
 
              }, {
-                 identifiant: '144FG',
-                 branchement: '456',
+                 reference: '144FG',
                  type: 'N°96',
                  objet: '12/02/1994'
              }, {
-                 identifiant: '148BV',
-                 branchement: '896',
+                 reference: '148BV',
                  type: 'N°14',
                  objet: '12/02/1994'
              }, {
-                 identifiant: '14HF1',
-                 branchement: '147',
+                 reference: '14HF1',
                  type: 'N°25',
                  objet: '12/02/1994'
              }, {
-                 identifiant: '14AZ1',
-                 branchement: '369',
+                 reference: '14AZ1',
                  type: 'N°12',
                  objet: '12/02/1994'
              }

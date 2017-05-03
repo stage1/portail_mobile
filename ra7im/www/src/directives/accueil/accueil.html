@@ -1,81 +1,94 @@
 ﻿
-
-<div class="form">
-
-    <br />
-    <center>Les encours</center>
-
-    <div class="col-md-3">
-        <a href="" data-toggle="modal" data-target="#modalImpayees" data-whatever="@mdo">
-            <div class="sm-st clearfix sm-st2">
-                <span class="sm-st-icon st-blue"><i class="fa fa-dollar"></i></span>
-                <div class="sm-st-info">
-                    <span>{{nbreImpayees}}</span>
-                    Fatures impayées
+<h2>Les encours</h2>
+<div class="social grid">
+    <div class="grid-info">
+        <div class="col-xs-3 top-comment-grid">
+            <a href data-toggle="modal" data-target="#modalImpayees" data-whatever="@mdo">
+                <div class="comments likes">
+                    <div class="comments-icon">
+                        <i class="fa fa-dollar"></i>
+                    </div>
+                    <div class="comments-info likes-info">
+                        <h3>12!!</h3>
+                        <span>Factures impayées</span>
+                    </div>
+                    <div class="clearfix"> </div>
                 </div>
-            </div>
-        </a>
-    </div>
-    <div class="col-md-3">
-        <a href="" data-toggle="modal" data-target="#modalNotification" data-whatever="@mdo">
-            <div class="sm-st clearfix sm-st2">
-                <span class="sm-st-icon st-blue"><i class="fa fa-bell"></i></span>
-                <div class="sm-st-info">
-                    <span>{{nbreNotidNonlues}}</span>
-                    Notifications non lues
+            </a>
+        </div>
+
+        <div class="col-xs-3 top-comment-grid">
+            <a href data-toggle="modal" data-target="#modalNotification" data-whatever="@mdo">
+                <div class="comments cours">
+                    <div class="comments-icon">
+                        <i class="fa fa-bell"></i>
+                    </div>
+                    <div class="comments-info">
+                        <h3>0</h3>
+                        <span>Notifications non lues</span>
+                    </div>
+                    <div class="clearfix"> </div>
                 </div>
-            </div>
-        </a>
-    </div>
-    <div class="col-md-3">
-        <a href="" data-toggle="modal" data-target="#modalReclamationEncours" data-whatever="@mdo">
-            <div class="sm-st clearfix sm-st2">
-                <span class="sm-st-icon st-blue"><i class="fa fa-check"></i></span>
-                <div class="sm-st-info">
-                    <span>{{nbreReclmtionEncours}}</span>
-                    Réclamations Encours
+            </a>
+        </div>
+        <div class="col-xs-3 top-comment-grid">
+            <a href data-toggle="modal" data-target="#modalReclamationEncours" data-whatever="@mdo">
+                <div class="comments tweets">
+                    <div class="comments-icon">
+                        <i class="fa fa-check"></i>
+                    </div>
+                    <div class="comments-info tweets-info">
+                        <h3>2!</h3>
+                        <span>Réclamations Encours</span>
+                    </div>
+                    <div class="clearfix"> </div>
                 </div>
-            </div>
-        </a>
-    </div>
-    <div class="col-md-3">
-        <a href="" data-toggle="modal" data-target="#modalReclamationRejetees" data-whatever="@mdo">
-            <div class="sm-st clearfix sm-st2">
-                <span class="sm-st-icon st-blue"><i class="fa fa-times"></i></span>
-                <div class="sm-st-info">
-                    <span>{{nbreReclmtionRejetes}}</span>
-                    Réclamations Rejetées
+            </a>
+        </div>
+        <div class="col-xs-3 top-comment-grid">
+            <a href data-toggle="modal" data-target="#modalReclamationRejetees" data-whatever="@mdo">
+                <div class="comments views">
+                    <div class="comments-icon">
+                        <i class="fa fa-times"></i>
+                    </div>
+                    <div class="comments-info views-info">
+                        <h3>12!!</h3>
+                        <span>Réclamations rejetées</span>
+                    </div>
+                    <div class="clearfix"> </div>
                 </div>
-            </div>
-        </a>
+            </a>
+        </div>
+
+        <div class="clearfix"> </div>
     </div>
+</div>
 
-    <listfactimpayees></listfactimpayees>
-    <listenotifications></listenotifications>
-    <listreclencours></listreclencours>
-    <listreclrejetees></listreclrejetees>
+<listfactimpayees></listfactimpayees>
+<listenotifications></listenotifications>
+<listreclencours></listreclencours>
+<listreclrejetees></listreclrejetees>
 
+<h2>Les branchements</h2>
+<br />
+<div class="social grid">
+    <div class="grid-info">
+        <table class="table table-striped">
+            <thead>
+                <tr class="border-radius border-color">
+                    <th class="text-xs-center"> Reference </th>
+                    <th class="text-xs-center"> Adresse </th>
+                    <th class="text-xs-center">  </th>
 
-    <br />
-    <center>Les branchements</center>
-    <br />
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th class="text-xs-center"> reference </th>
-                <th class="text-xs-center"> adresse </th>
-            </tr>
-        </thead>
-        <tbody ng-repeat='branchement in branchements'>
-            <tr>
-                <td class="btn btn-link" ng-click="details()">{{ branchement.reference }}</td>
-                <td class="text-xs-center">{{ branchement.adresse }}</td>
+                </tr>
+            </thead>
+            <tbody ng-repeat='branchement in branchements'>
+                <tr>
+                    <td class="text-xs-center">{{ branchement.reference }}</td>
+                    <td class="text-xs-center">{{ branchement.adresse }}</td>
+                    <td class="btn btn-info" ng-click="details()">Details</td>
+                </tr>
 
-    </table>
+        </table>
     </div>
-
-
-
-
-
-
+</div>

@@ -1,7 +1,7 @@
 ﻿angular.module('branchementApp').factory('notificationFctr', function ($http, $q) {
     var factory = {
         notification: null,
-    
+
         ListHistoNotificationSelonClient: function (idCli) {
             var notifications = [{
                 reference: 'FR147',
@@ -35,7 +35,7 @@
             ];
             return notifications;
         },
-       
+
 
 
         /*List des image d'une page*/

@@ -18,17 +18,15 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th class="text-xs-center">Identifiant incrémental</th>
-                            <th class="text-xs-center">Branchement</th>
+                          
                             <th class="text-xs-center">Facture</th>
                             <th class="text-xs-center">Date de la relève</th>
+                            <th class="text-xs-center"></th>
 
                         </tr>
                     </thead>
                     <tbody ng-repeat='releve in releves | filter:search'>
                         <tr>
-                            <td class="text-xs-center">{{releve.identifiant}}</td>
-                            <td class="text-xs-center">{{releve.branchement}}</td>
                             <td class="text-xs-center">{{releve.facture}}</td>
                             <td class="text-xs-center">{{releve.date}}</td>
                         </tr>

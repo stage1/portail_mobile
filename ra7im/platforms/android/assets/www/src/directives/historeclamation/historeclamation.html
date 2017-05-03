@@ -18,8 +18,7 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th class="text-xs-center">Identifiant incrémental</th>
-                            <th class="text-xs-center">Branchement</th>
+                            <th class="text-xs-center">Référence</th>
                             <th class="text-xs-center">Type de réclamation</th>
                             <th class="text-xs-center">Objet concerné</th>
 
@@ -27,8 +26,7 @@
                     </thead>
                     <tbody ng-repeat='reclamation in reclamations | filter:search'>
                         <tr>
-                            <td class="btn btn-link" ng-click="deposer()">{{reclamation.identifiant}}</td>
-                            <td class="text-xs-center">{{reclamation.branchement}}</td>
+                            <td class="btn btn-link" ng-click="deposer()">{{reclamation.reference}}</td>
                             <td class="text-xs-center">{{reclamation.type}}</td>
                             <td class="text-xs-center">{{reclamation.objet}}</td>
                         </tr>
