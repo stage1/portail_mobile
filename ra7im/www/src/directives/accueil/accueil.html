@@ -1,79 +1,53 @@
 ﻿
-<h2>Les encours</h2>
-<div class="social grid">
-    <div class="grid-info">
-        <div class="col-xs-3 top-comment-grid">
-            <a href data-toggle="modal" data-target="#modalImpayees" data-whatever="@mdo">
-                <div class="comments likes">
-                    <div class="comments-icon">
-                        <i class="fa fa-dollar"></i>
-                    </div>
-                    <div class="comments-info likes-info">
-                        <h3>12!!</h3>
-                        <span>Factures impayées</span>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-            </a>
-        </div>
 
-        <div class="col-xs-3 top-comment-grid">
-            <a href data-toggle="modal" data-target="#modalNotification" data-whatever="@mdo">
-                <div class="comments cours">
-                    <div class="comments-icon">
-                        <i class="fa fa-bell"></i>
-                    </div>
-                    <div class="comments-info">
-                        <h3>0</h3>
-                        <span>Notifications non lues</span>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-3 top-comment-grid">
-            <a href data-toggle="modal" data-target="#modalReclamationEncours" data-whatever="@mdo">
-                <div class="comments tweets">
-                    <div class="comments-icon">
-                        <i class="fa fa-check"></i>
-                    </div>
-                    <div class="comments-info tweets-info">
-                        <h3>2!</h3>
-                        <span>Réclamations Encours</span>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-xs-3 top-comment-grid">
-            <a href data-toggle="modal" data-target="#modalReclamationRejetees" data-whatever="@mdo">
-                <div class="comments views">
-                    <div class="comments-icon">
-                        <i class="fa fa-times"></i>
-                    </div>
-                    <div class="comments-info views-info">
-                        <h3>12!!</h3>
-                        <span>Réclamations rejetées</span>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="clearfix"> </div>
+<h1>Encours</h1> 
+<div class="row">
+    <div class="col-xs-3 col-sm-6 ">
+        <a href data-toggle="modal" data-target="#modalImpayees" data-whatever="@mdo">
+            <div class="main-box infographic-box colored emerald-bg">
+                <i class="fa fa-dollar"></i>
+                <span class="headline">Factures impayées</span>
+                <span class="value">12</span>
+            </div>
+        </a>
     </div>
-</div>
+    <div class="col-xs-3 col-sm-6 ">
+        <a href data-toggle="modal" data-target="#modalReclamationEncours" data-whatever="@mdo">
+            <div class="main-box infographic-box colored red-bg">
+                <i class="fa fa-check"></i>
+                <span class="headline">Réclamations Encours</span>
+                <span class="value">12</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-6 ">
+        <a href data-toggle="modal" data-target="#modalNotification" data-whatever="@mdo">
+            <div class="main-box infographic-box colored green-bg">
+                <i class="fa fa-bell"></i>
+                    <span class="headline">Notification Non lues</span>
+                    <span class="value">12</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-6">
+        <a href data-toggle="modal" data-target="#modalReclamationRejetees" data-whatever="@mdo">
+            <div class="main-box infographic-box colored purple-bg">
+                <i class="fa fa-times"></i>
+                <span class="headline">Réclamations rejetées</span>
+                <span class="value">12</span>
+            </div>
+        </a>
+    </div>
+    <br /><br />
 
-<listfactimpayees></listfactimpayees>
-<listenotifications></listenotifications>
-<listreclencours></listreclencours>
-<listreclrejetees></listreclrejetees>
+    <listfactimpayees></listfactimpayees>
+    <listreclencours></listreclencours>
+    <listreclrejetees></listreclrejetees>
+    <listenotifications></listenotifications>
 
-<h2>Les branchements</h2>
-<br />
-<div class="social grid">
-    <div class="grid-info">
-        <table class="table table-striped">
+ <h1>Les branchements</h1>
+    <div class="row">
+        <table class="table table-hover table-striped">
             <thead>
                 <tr class="border-radius border-color">
                     <th class="text-xs-center"> Reference </th>
@@ -86,9 +60,10 @@
                 <tr>
                     <td class="text-xs-center">{{ branchement.reference }}</td>
                     <td class="text-xs-center">{{ branchement.adresse }}</td>
-                    <td class="btn btn-info" ng-click="details()">Details</td>
+                    <td class="btn btn-info " ng-click="details()">Details</td>
                 </tr>
 
         </table>
     </div>
+
 </div>
