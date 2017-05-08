@@ -15,11 +15,9 @@
             }, {
                 reference: 1224,
                 adresse: 'James',
-
             }, {
                 reference: 4875,
                 adresse: 'Harry'
-
             }];
             return branchements;
         },

@@ -20,7 +20,6 @@
                     <thead>
                         <tr>
                             <th class="text-xs-center">référence</th>
-                            <th class="text-xs-center">Branchement</th>
                             <th class="text-xs-center">Montant TVA</th>
                             <th class="text-xs-center">Montant TTC</th>
 
@@ -29,7 +28,6 @@
                     <tbody ng-repeat='facture in factures | filter:search'>
                         <tr>
                             <td class="text-xs-center">{{facture.reference}}</td>
-                            <td class="text-xs-center">{{facture.branchement}}</td>
                             <td class="text-xs-center">{{facture.tva}}</td>
                             <td class="text-xs-center">{{facture.ttc}}</td>
                         </tr>

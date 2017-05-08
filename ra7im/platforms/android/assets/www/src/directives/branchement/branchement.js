@@ -4,6 +4,9 @@
         templateUrl: 'src/directives/branchement/branchement.html',
         controllerAs: 'branchementctrl',
         controller: function ($scope, $state) {
+            $scope.deposer = function () {
+                $state.go('deposereclamation');
+            }
         }
     }
 });

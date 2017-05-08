@@ -8,7 +8,7 @@
                         aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="gridSystemModalLabel">Historique réclamations</h4>
+                <h1 class="modal-title" id="gridSystemModalLabel">Historique réclamations</h1>
             </div>
             <div class="modal-body">
                 <form class='form-group form-inline'>
@@ -26,7 +26,7 @@
                     </thead>
                     <tbody ng-repeat='reclamation in reclamations | filter:search'>
                         <tr>
-                            <td class="btn btn-link" ng-click="deposer()">{{reclamation.reference}}</td>
+                            <td class="text-xs-center" >{{reclamation.reference}}</td>
                             <td class="text-xs-center">{{reclamation.type}}</td>
                             <td class="text-xs-center">{{reclamation.objet}}</td>
                         </tr>

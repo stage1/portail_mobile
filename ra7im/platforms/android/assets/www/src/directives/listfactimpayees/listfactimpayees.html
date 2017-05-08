@@ -8,7 +8,7 @@
                         aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="gridSystemModalLabel">Fatures impayées</h4>
+                <h1 class="modal-title" id="gridSystemModalLabel">Fatures impayées</h1>
             </div>
             <div class="modal-body">
                 <form class='form-group form-inline'>
@@ -19,7 +19,6 @@
                         <tr>
                             <th class="text-xs-center"> Référence</th>
                             <th>Date d'exigibilité</th>
-                            <th class="text-xs-center">Montant TTC</th>
                             <th class="text-xs-center">Reste à payé </th>
                             <th class="text-xs-center"></th>
                         </tr>
@@ -28,9 +27,8 @@
                         <tr>
                             <td class="text-xs-center">{{facture.reference}}</td>
                             <td class="text-xs-center">{{facture.dateExigibilite}}</td>
-                            <td class="text-xs-center">{{facture.montantTtc}}</td>
                             <td class="text-xs-center">{{facture.restePaye}}</td>
-                            <td class="btn btn-info" ng-click="payer()">payement</td>
+                            <td class="button" ng-click="payer()"><span>payement</span></td>
                         </tr>
                     </tbody>
                 </table>
