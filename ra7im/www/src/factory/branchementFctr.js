@@ -1,9 +1,9 @@
 ﻿angular.module('branchementApp').factory('branchementFctr', function ($http, $q) {
     var factory = {
-        Branchement: [],
+        branchements: null,
         /*liste des branchements*/
-        ListBranchement: function (idCli) {
-            var url = urlService + "/branchement/'";
+        ListBranchement: function (ref,adresse) {
+            var url = urlService + "/listBranchement/'" + ref + "'/'" + adresse +"'";
             var config = {};
             //var deferred = $q.defer();
             $http.get(url, config)

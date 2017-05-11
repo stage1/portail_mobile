@@ -1,6 +1,6 @@
 ﻿angular.module('branchementApp').factory('releveFctr', function ($http, $q) {
     var factory = {
-        Releve: null,
+        Releves: null,
 
 
             /*liste des historiques releves*/

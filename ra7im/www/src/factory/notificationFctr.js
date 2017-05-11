@@ -1,6 +1,6 @@
 ﻿angular.module('branchementApp').factory('notificationFctr', function ($http, $q) {
     var factory = {
-        notification: null,
+        notifications: null,
 
 
         /*List des historiques notifications */
@@ -11,7 +11,7 @@
             $http.get(url, config)
                 .success(function (data, status) {
                     if (data !== "") {
-                        factory.notification = data;
+                        factory.notifications = data;
                         deferred.resolve(data);
                     }
                     else {

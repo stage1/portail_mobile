@@ -1,13 +1,14 @@
-﻿angular.module('branchementApp').factory('reclamationFctr', function ($http, $q) {
+﻿
+angular.module('branchementApp').factory('reclamationFctr', function ($http, $q) {
     var factory = {
         reclamationRejet: null,
         reclamationAccep: null,
-        reclamation: null,
+        reclamations: null,
 
         /*liste réclamations encours*/
 
-        ListReclamationEncour: function () {
-            var url = urlService + "/listreclencours/'";
+        ListReclamationEncour: function (ref,etape,date) {
+            var url = urlService + "/listreclencours/'" + ref + "'/'" + etape + "'/'" + date + "'";
             var config = {};
             //var deferred = $q.defer();
             $http.get(url, config)
@@ -26,10 +27,10 @@
         },
         /**************************************************************/
 
-        /*liste réclamations rejetés*/
+        /*liste réclamations rejetées*/
 
-        ListReclamationRejet: function () {
-            var url = urlService + "/listreclrejetees/'";
+        ListReclamationRejet: function (ref,motifRej,DatRej) {
+            var url = urlService + "/listreclrejetees/'" + ref + "'/'" +motifRej + "'/'" +datRej + "'";
             var config = {};
             //var deferred = $q.defer();
             $http.get(url, config)
@@ -49,14 +50,14 @@
         /**************************************************************/
 
         /*liste des historiques réclamations*/
-        ListHistoReclamation: function () {
-            var url = urlService + "/historeclamation/'";
+        ListHistoReclamation: function (ref,type,object) {
+            var url = urlService + "/historeclamation/'" + ref+ "'/'" + type + "'/'" + Object + "'";
             var config = {};
             //var deferred = $q.defer();
             $http.get(url, config)
             .success(function (data, status) {
                 if (data !== "") {
-                    factory.ListBranchement = data;
+                    factory.reclamations = data;
                     deferred.resolve(data);
                 }
                 else {
@@ -69,8 +70,8 @@
         },
         /**************************************************************/
         /*création d'une réclamation*/
-        Create: function (reclamation) {
-            var url = urlService + "/deposerreclamation";
+        Create: function (nom,email,reclamation) {
+            var url = urlService + "/deposerreclamation/'" +nom + "'/'" + email+ "'/'" + reclamation +"'";
             //var deferred = $q.defer();
             $http.post(url, reclmation)
                 .success(function (data, status) {

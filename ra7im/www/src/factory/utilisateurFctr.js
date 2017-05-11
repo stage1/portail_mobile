@@ -17,10 +17,11 @@
                         deferred.resolve(null);
                     }
                 }).error(function (error, status) {
-                    deferred.reject("Erreur authentification");
+                    deferred.reject("Erreur inscription");
                 });
             return deferred.promise;
         },
+
         /**************************************************************/
         /*creation d'un compte*/
         inscription: function (referene,login,cin,tel, mdp) {
@@ -41,7 +42,7 @@
             });
         return deferred.promise;
     }
-    /
+        /**************************************************************/
 
     };
     return factory;

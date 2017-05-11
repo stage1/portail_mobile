@@ -5,9 +5,9 @@
 
         /*Liste des factures impayées*/
 
-        ListFactureImpySelonClient: function () {
+        ListFactureImpy: function (ref,dateExi,Restpay) {
 
-            var url = urlService + "/listfactimpayees";
+            var url = urlService + "/listfactimpayees/'" + ref + "'/'" + dateExi + "'/'"+ RestPay+"'";
             var config = {};
             //var deferred = $q.defer();
             $http.get(url, config)
@@ -31,9 +31,9 @@
 
         /*Liste des Historique factures*/
 
-        ListHistoFactureSelonClient: function () {
+        ListHistoFacture: function (ref,tva,ttc) {
 
-            var url = urlService + "/histofactures";
+            var url = urlService + "/histofactures/'" + ref + "'/'" + tva + "'/'" + ttc+ "'";
             var config = {};
             //var deferred = $q.defer();
             $http.get(url, config)
