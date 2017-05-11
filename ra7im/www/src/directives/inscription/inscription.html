@@ -1,48 +1,42 @@
 ﻿
+<br />
 
 <form class="form-horizontal">
     <fieldset>
-
-        <legend>S'abonner</legend>
+       <legend><center>S'abonner</center></legend>
         <!-- reference input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="name"></label>
-            <div class="col-md-4">
-                <input id="ref" name="ref" type="number" placeholder="Entrer votre référence " class="form-control input-md" required="">
+            <div class="col-sm-4">
+                <center><input id="ref" name="ref" type="number" placeholder="Entrer votre référence " class="form-control2 input-sm" required="" ng-model="ref"></center>
 
             </div>
         </div>
         <!-- email input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="email"></label>
-            <div class="col-md-4">
-                <input id="email" name="email" type="email" placeholder="Entrer votre adresse email" class="form-control input-md" required="">
+            <div class="col-sm-4">
+                <center><input id="email" name="email" type="email" placeholder="Entrer votre adresse email" class="form-control2 input-sm" required="" ng-model="login"></center>
 
             </div>
         </div>
         <!-- cin input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="street"></label>
-            <div class="col-md-4">
-                <input id="cin" name="cin" type="number" placeholder="Entrer votre CIN" class="form-control input-md" required="">
+            <div class="col-sm-4">
+                <center><input id="cin" name="cin" type="number" placeholder="Entrer votre CIN" class="form-control2 input-sm" required="" ng-model="cin"></center> 
 
             </div>
         </div>
         <!-- telephone input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="area"></label>
-            <div class="col-md-4">
-
-                <input id="tel" name="tel" type="tel" placeholder="Entrer votre numéro de téléphone" class="form-control input-md" required="">
+            <div class="col-sm-4">
+             <center>   <input id="tel" name="tel" type="tel" placeholder="Entrer votre numéro de téléphone" class="form-control2 input-sm" required="" ng-model="tel"></center> 
 
             </div>
         </div>
 
         <!-- Password input-->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="password"></label>
-            <div class="col-md-4">
-                <input id="password" name="password" type="password" placeholder="Entrer votre mot de passe" class="form-control input-md" required="">
+            <div class="col-sm-4">
+              <center>  <input id="password" name="password" type="password" placeholder="Entrer votre mot de passe" class="form-control2 input-sm" required="" ng-model="mdp"></center> 
 
             </div>
         </div>
@@ -50,9 +44,8 @@
 
         <!-- Button -->
         <div class="form-group">
-            <label class="col-md-4 control-label" for="signup"></label>
-            <div class="col-md-4">
-                <center><button id="signup" name="signup" class="btn btn-success" ng-click="abonne()">Sign Up</button></center>
+            <div class="col-sm-4">
+                <center><button id="signup" name="signup" class="btn btn-success" ng-click="create()">Valider</button></center>
             </div>
         </div>
     </fieldset>

@@ -4,7 +4,7 @@
         templateUrl: 'src/directives/listfactimpayees/listfactimpayees.html',
         controllerAs: 'listfactimpayeesctrl',
         controller: function ($scope, $state, factureFctr) {
-            $scope.factures = factureFctr.ListFactureImpySelonClient();
+            $scope.factures = factureFctr.ListFactureImpy();
         }
     }
 });

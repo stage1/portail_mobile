@@ -7,7 +7,7 @@
             $scope.details = function () {
                 $state.go('branchement');
             }
-            $scope.branchements = branchementFctr.ListBranchementSelonClient();
+            $scope.branchements = branchementFctr.ListBranchement();
          
         }
     }

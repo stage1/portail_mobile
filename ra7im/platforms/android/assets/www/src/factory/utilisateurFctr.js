@@ -1,22 +1,23 @@
-﻿angular.module('branchementApp').factory('branchementFctr', function ($http, $q) {
+﻿angular.module('branchementApp').factory('utilisateurFctr', function ($http, $q) {
     var factory = {
-        Branchement: [],
-        /*liste des branchements*/
-        ListBranchement: function (idCli) {
-            var url = urlService + "/branchement/'";
+        utilisateur: null,
+
+        /*Authentification*/
+        authentification: function (login, mdp) {
+            var url = urlService + "/authentif/'" + login + "'/'" + mdp + "'";
             var config = {};
             //var deferred = $q.defer();
             $http.get(url, config)
                 .success(function (data, status) {
                     if (data !== "") {
-                        factory.Branchement = data;
+                        factory.utilisateur = data;
                         deferred.resolve(data);
                     }
                     else {
                         deferred.resolve(null);
                     }
                 }).error(function (error, status) {
-                    deferred.reject("Erreur listbranchement");
+                    deferred.reject("Erreur authentification");
                 });
             return deferred.promise;
         }

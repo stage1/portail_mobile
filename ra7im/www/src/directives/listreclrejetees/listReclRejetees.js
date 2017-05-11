@@ -4,7 +4,7 @@
         templateUrl: 'src/directives/listreclrejetees/listreclrejetees.html',
         controllerAs: 'listreclrejeteesctrl',
         controller: function ($scope, $state ,reclamationFctr) {
-            $scope.reclamations = reclamationFctr.ListReclamationRejetSelonClient();
+            $scope.reclamations = reclamationFctr.ListReclamationRejet();
         }
     }
 });

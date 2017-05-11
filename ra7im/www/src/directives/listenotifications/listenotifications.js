@@ -4,6 +4,8 @@
         templateUrl: 'src/directives/listenotifications/listenotifications.html',
         controllerAs: 'listenotificationsctrl',
         controller: function ($scope, $state, notificationFctr) {
+            $scope.notifications = notificationFctr.ListNotifications();
+
         }
     }
 });

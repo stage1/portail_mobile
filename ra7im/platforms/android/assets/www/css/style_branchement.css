@@ -50,6 +50,16 @@ width: 120px !important;
 font-size: 12px !important;
 
 }
+.form-control input-sm{
+
+height: 20px !important;
+
+width: 120px !important;
+
+font-size: 12px !important;
+
+}
+
 
 .well{
     background-color: #ffffff;
@@ -70,7 +80,7 @@ h4 {
   font-size: 10px;
 }
 .list-group-item{
-        background-color:#0094ff;
+        background-color:#46c0e8;
        color:#050f5a;
 
 }

@@ -4,7 +4,7 @@
         templateUrl: 'src/directives/listreclencours/listreclencours.html',
         controllerAs: 'listreclencoursctrl',
         controller: function ($scope, $state ,reclamationFctr) {
-            $scope.reclamations = reclamationFctr.ListReclamationEncourSelonClient();
+            $scope.reclamations = reclamationFctr.ListReclamationEncour();
         }
     }
 });

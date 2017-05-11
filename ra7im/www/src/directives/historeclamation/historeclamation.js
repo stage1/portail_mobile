@@ -5,7 +5,7 @@
         controllerAs: 'historeclamationctrl',
         controller: function ($scope, $state ,reclamationFctr) {
             
-            $scope.reclamations = reclamationFctr.ListHistoReclamationSelonClient();
+            $scope.reclamations = reclamationFctr.ListHistoReclamation();
         }
     }
 });

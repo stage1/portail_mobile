@@ -1,82 +1,59 @@
 ﻿angular.module('branchementApp').factory('factureFctr', function ($http, $q) {
     var factory = {
-        facture: null,
-        ListFactureImpySelonClient: function (idCli) {
-            var factures = [{
-                reference: '147441',
-                dateExigibilite: '12/02/1994',
-                montantTtc: '125',
-                restePaye: 357
-            }, {
-                reference: '144891',
-                dateExigibilite: '15/06/1999',
-                montantTtc: '125',
-                restePaye: 213
-            }, {
-                reference: '14891',
-                dateExigibilite: '15/07/2008',
-                montantTtc: '125',
-                restePaye: 985
-            }, {
-                reference: '143741',
-                dateExigibilite: '02/06/2010',
-                montantTtc: '125',
-                restePaye: 365
-            }
+        FactureImpy: null,
+        factures: null,
 
-            ];
-            return factures;
-        },
-        ListHistoFactureSelonClient: function (idCli) {
-            var factures = [{
-                reference: 'FR147',
-                branchement: '123',
-                tva: '14$',
-                ttc: '156$'
+        /*Liste des factures impayées*/
 
-            }, {
-                reference: '144FG',
-                branchement: '456',
-                tva: '123$',
-                ttc: '123.12$'
-            }, {
-                reference: '148BV',
-                branchement: '896',
-                tva: '365$',
-                ttc: '12.256$'
-            }, {
-                reference: '14HF1',
-                branchement: '147',
-                tva: '123$',
-                ttc: '110$'
-            }
+        ListFactureImpySelonClient: function () {
 
-            ];
-            return factures;
-        },
-        /*List des image d'une page*/
-        authentification: function (login, mdp) {
-            utilisateur = { Id: '1', Nom: 'hkh' };
-            return utilisateur;
-            /*
-            var url = urlService + "/api/comptes/login/'" + login + "'/'" + mdp + "'";
+            var url = urlService + "/listfactimpayees";
             var config = {};
-            var deferred = $q.defer();
+            //var deferred = $q.defer();
             $http.get(url, config)
                 .success(function (data, status) {
                     if (data !== "") {
-                        factory.compte = data;
+                        factory.FactureImpy = data;
                         deferred.resolve(data);
                     }
                     else {
                         deferred.resolve(null);
                     }
                 }).error(function (error, status) {
-                    deferred.reject("Erreur authentification");
+                    deferred.reject("Erreur listFactureImpy");
                 });
-            return deferred.promise;*/
+            return deferred.promise;
+        },
+
+
+
+        /**************************************************************/
+
+        /*Liste des Historique factures*/
+
+        ListHistoFactureSelonClient: function () {
+
+            var url = urlService + "/histofactures";
+            var config = {};
+            //var deferred = $q.defer();
+            $http.get(url, config)
+                .success(function (data, status) {
+                    if (data !== "") {
+                        factory.factures = data;
+                        deferred.resolve(data);
+                    }
+                    else {
+                        deferred.resolve(null);
+                    }
+                }).error(function (error, status) {
+                    deferred.reject("Erreur histofactures");
+                });
+            return deferred.promise;
         }
         /**************************************************************/
+
     };
     return factory;
+
 });
+

@@ -4,7 +4,7 @@
         templateUrl: 'src/directives/histofactures/histofactures.html',
         controllerAs: 'histofacturesctrl',
         controller: function ($scope, $state, factureFctr) {
-            $scope.factures = factureFctr.ListHistoFactureSelonClient();
+            $scope.factures = factureFctr.ListHistoFacture();
         }
     }
 });
