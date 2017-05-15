@@ -1,4 +1,5 @@
-﻿angular.module('branchementApp').directive('authentif', function () {
+﻿
+angular.module('branchementApp').directive('authentif', function () {
     return {
         restrict: 'E',
         templateUrl: 'src/directives/authentif/authentif.html',
@@ -13,7 +14,7 @@
                 }, function (err) {
                     //todo : Afficher erreur 
                 });
-            }
+            }      
                 $scope.abonne = function () {
                     $state.go('inscription');
 
